@@ -172,8 +172,10 @@ function App() {
             </Button>
           </div>
           {keypair && (
-            <p className="border bg-white shadow p-3">
-              Generated new keypair @ Public key:{keypair?.publicKey()}
+            <p className="border bg-white shadow p-3 text-wrap ">
+              Generated new keypair @ Public key:
+              <br />
+              {keypair?.publicKey()}
             </p>
           )}
         </div>
